@@ -785,15 +785,27 @@ nav ul li a {
 }
 
 
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .login {
+  text-align: center;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 .form-login {
-  display: flex;
-  flex-direction: column;
   width: 300px;
   margin-bottom: 20px;
 }
@@ -810,14 +822,15 @@ nav ul li a {
 
 input {
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   border-radius: 4px;
   border: 1px solid #ccc;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .button-submit {
-  padding: 10px 20px;
+  width: 100%;
+  padding: 12px;
   background-color: #4CAF50;
   color: white;
   border: none;
@@ -828,11 +841,10 @@ input {
 
 .form-message {
   margin-top: 10px;
+  text-align: center;
   font-size: 14px;
   color: red;
 }
-
-
 
 
 

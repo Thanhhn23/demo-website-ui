@@ -50,7 +50,7 @@ export default function Login({ setIsAuthenticated }) {
     }
 
     return (
-        <div>
+        <div className='form-container'>
             <h2 className='login'>Log in</h2>
             <form onSubmit={handleLogin} className='form-login'>
                 <div className='form-field'>
