@@ -12,7 +12,7 @@ function AddProduct() {
   const token = getCookieValue("token");
 
   async function post(data) {
-    const response = await fetch("http://localhost:5000/api/v1/products", {
+    const response = await fetch("https://demo-website-api.vercel.app/api/v1/products", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -29,7 +29,7 @@ function AddProduct() {
 
     const formData = new FormData();
     formData.append("image", image);
-    return fetch("http://localhost:5000/api/v1/upload", {
+    return fetch("https://demo-website-api.vercel.app/api/v1/upload", {
       method: 'POST',
       headers:{
         Authorization: token

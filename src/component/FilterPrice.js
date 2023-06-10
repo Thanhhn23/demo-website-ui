@@ -4,7 +4,7 @@ import { getCookieValue } from "../function/cookie";
 
 export const filterPrice = async (fromPrice, toPrice, page, limit) => {
   const token = getCookieValue('token');
-  const response = await fetch(`http://localhost:5000/api/v1/products?from_price=${fromPrice}&to_price=${toPrice}&page=${page}&limit=${limit}`, {
+  const response = await fetch(`https://demo-website-api.vercel.app/api/v1/products?from_price=${fromPrice}&to_price=${toPrice}&page=${page}&limit=${limit}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",

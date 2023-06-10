@@ -33,7 +33,7 @@ function EditProduct({ id, closeModal }) {
             last_modified_date: new Date(Date.now())
         };
 
-        fetch(`http://localhost:5000/api/v1/products/${id}`, {
+        fetch(`https://demo-website-api.vercel.app/api/v1/products/${id}`, {
             method: 'PUT',
             headers: {
                 Authorization: token,
@@ -84,7 +84,7 @@ function EditProduct({ id, closeModal }) {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/api/v1/products/${id}`, {
+        fetch(`https://demo-website-api.vercel.app/api/v1/products/${id}`, {
             method: 'GET',
             headers: {
                 Authorization: token,

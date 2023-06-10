@@ -17,7 +17,7 @@ export default function Login({ setIsAuthenticated }) {
 
     const handleLogin = (e) => {
         e.preventDefault();
-        fetch('http://localhost:5000/api/v1/users', {
+        fetch('https://demo-website-api.vercel.app/api/v1/users', {
             method: 'POST',
             body: JSON.stringify({ username, password }),
             headers: {

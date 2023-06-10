@@ -57,8 +57,8 @@ function Home() {
 
 
   const fetchData = () => {
-    let url = `http://localhost:5000/api/v1/products?page=${page}&limit=${limit}`
-    let getPageUrl = `http://localhost:5000/api/v1/products`;
+    let url = `https://demo-website-api.vercel.app/api/v1/products?page=${page}&limit=${limit}`
+    let getPageUrl = `https://demo-website-api.vercel.app/api/v1/products`;
     if (searchQuery) {
       url += `&search=${searchQuery}`;
       getPageUrl += `?search=${searchQuery}`;

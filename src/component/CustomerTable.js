@@ -5,7 +5,7 @@ import '../App.css'
 
 function CustomerTable() {
 
-    const url = "http://localhost:5000/api/v1/customers";
+    const url = "https://demo-website-api.vercel.app/api/v1/customers";
     const token = getCookieValue("token");
     const [listCustomers, setListCustomers] = useState([]);
     const [isModalOpen, setIsModalOpen] = useState(false);

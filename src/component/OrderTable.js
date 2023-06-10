@@ -20,7 +20,7 @@ function OrderTable() {
     }
 
     useEffect(() => {
-        fetch('http://localhost:5000/api/v1/orders', {
+        fetch('https://demo-website-api.vercel.app/api/v1/orders', {
             method: 'GET',
             headers: {
                 Authorization: token
@@ -33,7 +33,7 @@ function OrderTable() {
 
 
     function handleClickOrder(id) {
-        fetch(`http://localhost:5000/api/v1/orders/${id}`, {
+        fetch(`https://demo-website-api.vercel.app/api/v1/orders/${id}`, {
             method: 'GET',
             headers: {
                 Authorization: token
