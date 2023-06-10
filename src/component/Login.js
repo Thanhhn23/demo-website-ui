@@ -54,7 +54,7 @@ export default function Login({ setIsAuthenticated }) {
             <h2 className='login'>Log in</h2>
             <form onSubmit={handleLogin} className='form-login'>
                 <div className='form-field'>
-                    <label htmlFor='username'>Username</label>
+                    <label htmlFor='username' className='form-label'>Username</label>
                     <input type='text'
                         id='username'
                         value={username}
@@ -62,7 +62,7 @@ export default function Login({ setIsAuthenticated }) {
                     ></input>
                 </div>
                 <div className='form-field'>
-                    <label htmlFor='password'>Password</label>
+                    <label htmlFor='password' className='form-label'>Password</label>
                     <input type='text'
                         id='username'
                         value={password}

@@ -802,7 +802,7 @@ nav ul li a {
   margin-bottom: 10px;
 }
 
-label {
+.form-label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
