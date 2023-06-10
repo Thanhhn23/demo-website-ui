@@ -27,7 +27,7 @@ export default function App() {
     const token = getCookieValue('token');
 
     if (token) {
-      axios.get('http://localhost:5000/api/v1/authenticate', {
+      axios.get('https://demo-website-api.vercel.app/api/v1/authenticate', {
         headers: {
           Authorization: token
         }
