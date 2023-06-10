@@ -55,7 +55,7 @@ function ProductDetail({ product }) {
                 <div className="product-image">
                     <a href={product.page_url} target="_blank" rel="noopener noreferrer">
                         <img src={product.image_url} alt={product.name} />
-                        <button className="delete-button" onClick={() => handleDeleteProduct(product.id)}>X</button>
+                        <button className="product-delete-button" onClick={() => handleDeleteProduct(product.id)}>X</button>
                     </a>
                     
                 </div>
