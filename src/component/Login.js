@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../App.css'
 
 export default function Login({ setIsAuthenticated }) {
 
@@ -50,9 +51,9 @@ export default function Login({ setIsAuthenticated }) {
 
     return (
         <div>
-            <h2>Log in</h2>
-            <form onSubmit={handleLogin}>
-                <div>
+            <h2 className='login'>Log in</h2>
+            <form onSubmit={handleLogin} className='form-login'>
+                <div className='form-field'>
                     <label htmlFor='username'>Username</label>
                     <input type='text'
                         id='username'
@@ -60,7 +61,7 @@ export default function Login({ setIsAuthenticated }) {
                         onChange={handleUsername}
                     ></input>
                 </div>
-                <div>
+                <div className='form-field'>
                     <label htmlFor='password'>Password</label>
                     <input type='text'
                         id='username'
@@ -68,9 +69,9 @@ export default function Login({ setIsAuthenticated }) {
                         onChange={handlePassword}
                     ></input>
                 </div>
-                <button type='submit'>Login</button>
+                <button type='submit' className='button-submit'>Login</button>
             </form>
-            {message && <p>{message}</p>}
+            {message && <p className='form-message'>{message}</p>}
         </div>
     )
 }
