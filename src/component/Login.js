@@ -50,6 +50,7 @@ export default function Login({ setIsAuthenticated }) {
     }
 
     return (
+        <div className='form-body'>
         <div className='form-container'>
             <h2 className='login'>Log in</h2>
             <form onSubmit={handleLogin} className='form-login'>
@@ -59,6 +60,7 @@ export default function Login({ setIsAuthenticated }) {
                         id='username'
                         value={username}
                         onChange={handleUsername}
+                        className='form-input'
                     ></input>
                 </div>
                 <div className='form-field'>
@@ -67,11 +69,13 @@ export default function Login({ setIsAuthenticated }) {
                         id='username'
                         value={password}
                         onChange={handlePassword}
+                        className='form-input'
                     ></input>
                 </div>
                 <button type='submit' className='button-submit'>Login</button>
             </form>
             {message && <p className='form-message'>{message}</p>}
+        </div>
         </div>
     )
 }

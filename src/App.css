@@ -786,7 +786,7 @@ nav ul li a {
 }
 
 
-body {
+.form-body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -824,7 +824,7 @@ body {
   margin-bottom: 5px;
 }
 
-input {
+.form-input {
   width: 100%;
   padding: 12px;
   border-radius: 4px;
