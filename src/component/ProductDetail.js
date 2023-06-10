@@ -34,6 +34,20 @@ function ProductDetail({ product }) {
         setIsEditOpen(false);
     }
 
+    function handleDeleteProduct(id){
+        const token = getCookieValue('token');
+        fetch(`https://demo-website-api.vercel.app/api/v1/products/${id}`,{
+            method: 'DELETE',
+            headers: {
+                Authorization: token
+            }
+        })
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .catch(e => console.log(e))
+    }
+    
+
 
     return (
         <div className="product-list">
@@ -41,7 +55,9 @@ function ProductDetail({ product }) {
                 <div className="product-image">
                     <a href={product.page_url} target="_blank" rel="noopener noreferrer">
                         <img src={product.image_url} alt={product.name} />
+                        <button className="delete-button" onClick={() => handleDeleteProduct(product.id)}>X</button>
                     </a>
+                    
                 </div>
                 <div className="product-detail">
                     <h2 className="product-name">{product.name}</h2>
