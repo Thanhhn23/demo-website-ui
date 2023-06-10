@@ -150,7 +150,7 @@ function Home() {
       <h2 className="title">Product List</h2>
       <div className="search-zone">
       <span className="search-container">
-        <label htmlFor="search-bar">Search bar: </label>
+        <label htmlFor="search-bar">Search: </label>
         <input type="text" id="search-bar" value={searchQuery} onChange={handleSearchQuery} />
         <button onClick={handleSearch}>Search</button>
         <button onClick={handleClearSearch}>Clear</button>

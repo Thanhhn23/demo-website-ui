@@ -639,7 +639,7 @@ nav ul li a {
 .show-row-container {
   display: flex;
   align-items: center;
-  gap: 10px;
+  /* gap: 10px; */
 }
 
 .show-row-container label {
@@ -656,6 +656,7 @@ nav ul li a {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin: 10px;
 }
 
 .filter-price-container label {
