@@ -58,7 +58,7 @@ export default function App() {
     )
   }
 
-  if (!isAuthenticated) {
+  else if (!isAuthenticated) {
     return <Login setIsAuthenticated={setIsAuthenticated} />;
   }
 
