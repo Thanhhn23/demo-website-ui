@@ -12,11 +12,9 @@ import Order from "./component/Order";
 import About from "./component/About";
 import Login from "./component/Login";
 
-import { getCookieValue } from "./function/cookie";
+import { getCookieValue, setCookie } from "./function/cookie";
 
 import './App.css'
-
-
 
 export default function App() {
 
@@ -48,6 +46,11 @@ export default function App() {
 
 
   }, []);
+
+  function handleLogout(){    
+      setIsAuthenticated(false);
+      document.cookie = `token = false;`    
+  }
 
   if (isLoading) {
     return (
@@ -83,10 +86,7 @@ export default function App() {
     </ul>
   </nav>
   <div>
-    <button className="button-logout" onClick={() => {
-      setIsAuthenticated(false);
-      document.cookie = `token = false;`
-    }}>
+    <button className="button-logout" onClick={handleLogout}>
       <i className="fas fa-sign-out-alt"></i>
       Log out
     </button>
