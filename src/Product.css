@@ -29,6 +29,13 @@
     outline: none;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s, border-color 0.3s; /* Add transition for smooth hover effect */
+  }
+  
+  .product-delete-button:hover {
+    background-color: red; /* Set the background color on hover */
+    border: 1px solid white; /* Add a white border on hover */
+    border-radius: 50%; /* Make it circular by setting border-radius to 50% */
   }
   
   .product-image img {

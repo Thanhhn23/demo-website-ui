@@ -21,7 +21,7 @@ function EditProduct({ id, closeModal }) {
 
 
     function handleEditSave() {
-        console.log('Save');
+        //console.log('Save');
         const id = product[0].id;
         const obj = {
             name: name,

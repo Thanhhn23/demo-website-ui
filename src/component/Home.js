@@ -19,6 +19,7 @@ function Home() {
   const [loadingProduct, setLoadingProduct] = useState(false);
   const [fPrice, setFPrice] = useState('');
   const [tPrice, setTPrice] = useState('');
+  const [showAddProduct, setShowAddProduct] = useState(false);
 
   function handleFilter(fromPrice, toPrice, page, limit) {
     
@@ -29,7 +30,6 @@ function Home() {
       setProducts(JSON.parse(finalResult))
     })
   }
-
 
   const limitOptions = [10, 20, 50, 100];
 
@@ -49,11 +49,10 @@ function Home() {
       .then(data => {
         //console.log(data)
         const totalPage = Math.ceil(data.length / limit)
-        console.log('total page :  ', totalPage)
+        //console.log('total page :  ', totalPage)
         setTotalPage(totalPage -1)
       })
   }
-
 
 
   const fetchData = () => {
@@ -75,7 +74,7 @@ function Home() {
     })
       .then(res => res.json())
       .then(data => {
-        console.log('data items ===============', data.length)
+        //console.log('data items ===============', data.length)
         setProducts(data)
         getTotalPages(getPageUrl);
       })
@@ -143,6 +142,12 @@ function Home() {
     setTPrice(toPrice);
   }
 
+  function handleShowAddProduct() {
+    setShowAddProduct(true);
+  }
+function handleCloseAddProduct() {
+  setShowAddProduct(false);
+}
 
 
   return (
@@ -178,19 +183,19 @@ function Home() {
         <button><i className="fas fa-cart-plus" onClick={handleViewCart}></i></button>
         {showCart && <Cart showCart={showCart} closeCart={handleCloseCart} openCart={showCart}></Cart>}
       </div>
+      <div className="add-product-container">
+        <button  className="add-product-button" onClick={handleShowAddProduct}><i className="fas fa-octagon-plus"></i>Add a product</button>
+        {showAddProduct && <AddProduct showAddProduct={showAddProduct} closeAddProduct={handleCloseAddProduct} openAddProduct={showAddProduct} setLoadingProductState={setLoadingProductState}></AddProduct>}
+      </div>
       <div className="product-container">
 
         <div className="product-table">
           {products && products.length > 0 ? (
-            <ProductTable products={products}></ProductTable>
+            <ProductTable products={products} setLoadingProductState={setLoadingProductState}></ProductTable>
           ):(
             <div>No result found</div>
           )}
-        </div>
-       
-        <div>
-          <AddProduct />
-        </div>
+        </div> 
 
       </div>
 
