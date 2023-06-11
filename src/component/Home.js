@@ -180,7 +180,6 @@ function Home() {
       </div>
       <div className="product-container">
 
-        {/* <h2 className="table-header">Product List</h2> */}
         <div className="product-table">
           {products && products.length > 0 ? (
             <ProductTable products={products}></ProductTable>
@@ -189,9 +188,9 @@ function Home() {
           )}
         </div>
        
-        {/* <div>
+        <div>
           <AddProduct />
-        </div> */}
+        </div>
 
       </div>
 
