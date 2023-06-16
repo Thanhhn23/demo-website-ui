@@ -4,7 +4,7 @@ import ProductDetail from './ProductDetail';
 
 
 const ProductTable = ({ products, setLoadingProductState }) => {
-
+console.log(setLoadingProductState);
   return (
     <div className="product-list">
       {products.map(product => (
