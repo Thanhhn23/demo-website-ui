@@ -43,11 +43,7 @@ function ProductDetail({ product, setLoadingProductState }) {
                 Authorization: token
             }
         })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                setLoadingProductState();
-            })
+            .then(res => setLoadingProductState())            
             .catch(e => console.log(e));
     }
 
