@@ -46,7 +46,8 @@
     })(); </script>
   <!-- End of CDP Web Insight script -->
   <!-- CDP Web Insight script -->
-  <script src="https://sandbox-template.ants.vn/khanhhv/webpush.js" async=""></script>
+  <!-- sandbox antsomi webpush
+     <script src="https://sandbox-template.ants.vn/khanhhv/webpush.js" async=""></script>
   <script>
     window.AntsomiPush = window.AntsomiPush || [];
 
@@ -55,8 +56,21 @@
         portalId: 33167,
       });
     });
-  </script>
+  </script> -->
   <!-- End of CDP Web Insight script -->
+
+  <!-- CDP Web Insight script - webpush portal demo -->
+<script src="https://st-a.cdp.asia/webpush.js" async=""></script>
+<script>
+  window.AntsomiPush = window.AntsomiPush || [];
+
+  AntsomiPush.push(function() {
+    AntsomiPush.init({
+      portalId: 561236459,
+    });
+  });
+</script>
+<!-- End of CDP Web Insight script -->
   <title>React App</title>
 </head>
 
