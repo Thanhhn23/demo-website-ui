@@ -26,7 +26,7 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
   <!-- CDP Web Insight script -->
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     var _portalId = "33167"; // Portal ANTSOMI Shopping 
     var _propId = "556336465";
     var _ATM_TRACKING_ASSOCIATE_UTM = 1; // https://demo-website-ui-thanhhn23.vercel.app/ 
@@ -43,7 +43,8 @@
       e.type = "text/javascript", e.async = !0, e.src = "//sandbox-st-a.cdp.asia/insight.js";
       var t = document.getElementsByTagName("script")[0];
       t.parentNode.insertBefore(e, t)
-    })(); </script>
+    })(); 
+    </script> -->
   <!-- End of CDP Web Insight script -->
   <!-- CDP Web Insight script -->
   <!-- sandbox antsomi webpush
@@ -58,6 +59,27 @@
     });
   </script> -->
   <!-- End of CDP Web Insight script -->
+
+  <!-- CDP Web Insight script -->
+<script type = "text/javascript" >
+  var _portalId = "561236459"; // Portal DEMO 
+  var _propId = "564990703"; 
+  var _ATM_TRACKING_ASSOCIATE_UTM = 0 ; // https://demo-website-ui-thanhhn23.vercel.app/ 
+(function() {
+   var w = window;
+   if (w.web_event) return;
+   var a = window.web_event = function() {
+       a.queue.push(arguments);
+   }
+   a.propId = _propId;
+   a.track = a;
+   a.queue = [];
+   var e = document.createElement("script");
+   e.type = "text/javascript", e.async = !0, e.src = "//st-a.cdp.asia/insight.js";
+   var t = document.getElementsByTagName("script")[0];
+   t.parentNode.insertBefore(e, t)
+})(); </script>
+<!-- End of CDP Web Insight script -->
 
   <!-- CDP Web Insight script - webpush portal demo -->
 <script src="https://st-a.cdp.asia/webpush.js" async=""></script>
