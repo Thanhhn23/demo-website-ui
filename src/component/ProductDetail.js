@@ -7,7 +7,14 @@ import '../Product.css'
 function ProductDetail({ product, setLoadingProductState }) {
 
     function handleAddToCart(product) {
+        
         product = { ...product, quantity: 1 };
+
+        window.web_event.track("product", "add_to_cart", {
+            items: product,
+            dims: {},
+            extra: {}
+        })
 
         const existingCart = JSON.parse(getCookieValue('cart')) || [];
         const productIndex = existingCart.findIndex(item => item.id === product.id);
