@@ -10,8 +10,10 @@ function ProductDetail({ product, setLoadingProductState }) {
         
         product = { ...product, quantity: 1 };
 
+        let item = [{type: "product", ...product}];
+
         window.web_event.track("product", "add_to_cart", {
-            items: product,
+            items: item,
             dims: {},
             extra: {}
         })
