@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { getCookieValue } from "../function/cookie";
 import '../Product.css'
 
+
+
 function EditProduct({ id, closeModal }) {
 
     const token = getCookieValue('token');
@@ -109,10 +111,8 @@ function EditProduct({ id, closeModal }) {
 
     }, [])
 
-
-
     return (
-        <div className="edit-product-container">
+        <div className="edit-product-container">            
             {product && product.length > 0 ? (
                 <div key={product[0].id}>
                     <div className="edit-product-id">Product ID: {product[0].id}</div>
@@ -149,7 +149,9 @@ function EditProduct({ id, closeModal }) {
             ) : (
                 <div>Loading...</div>
             )}
+            
         </div>
+        
     )
 }
 
