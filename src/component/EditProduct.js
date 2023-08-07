@@ -120,7 +120,7 @@ function EditProduct({ id, closeModal }) {
                 setImageUrl(data[0].image_url);
                 setPageUrl(data[0].page_url);
                 console.log(data[0]);
-                web_event.track("product", "view", {
+                window.web_event.track("product", "view", {
                     items: data,
                     dims: {},
                     extra: {}
