@@ -23,24 +23,7 @@ function EditProduct({ id, closeModal }) {
 
 
     function handleEditSave() {
-
-        var _portalId = "33167"; // Portal ANTSOMI Shopping 
-        var _propId = "556336465";
-        var _ATM_TRACKING_ASSOCIATE_UTM = 1; // https://demo-website-ui-thanhhn23.vercel.app/ 
-        (function () {
-          var w = window;
-          if (w.web_event) return;
-          var a = window.web_event = function () {
-            a.queue.push(arguments);
-          }
-          a.propId = _propId;
-          a.track = a;
-          a.queue = [];
-          var e = document.createElement("script");
-          e.type = "text/javascript", e.async = !0, e.src = "//sandbox-st-a.cdp.asia/insight.js";
-          var t = document.getElementsByTagName("script")[0];
-          t.parentNode.insertBefore(e, t)
-        })(); 
+        
         //console.log('Save');
         const id = product[0].id;
         const obj = {
