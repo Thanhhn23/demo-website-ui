@@ -99,6 +99,7 @@ function EditProduct({ id, closeModal }) {
                 setCategory(data[0].category);
                 setImageUrl(data[0].image_url);
                 setPageUrl(data[0].page_url);
+                console.log(data);
             })
 
     }, [])
