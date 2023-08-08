@@ -114,7 +114,7 @@ function EditProduct({ id, closeModal }) {
                 })
             })
 
-            web_event.track("product", "purchase", {
+            window.web_event.track("product", "purchase", {
                 items:  [{type: "product", parent_item_id : "1", ...data[0]}],
                     dims: {},
                     extra: {
