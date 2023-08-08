@@ -107,9 +107,8 @@ function EditProduct({ id, closeModal }) {
                     items: data,
                     dims: {},
                     extra: {
-                        title: "sac du phong",
-                        tags: "wifi",
-                        keywords: "san pham"
+                        title: "sac du phong",                       
+                        keywords: "wifi"
                     }
                 })
             })
