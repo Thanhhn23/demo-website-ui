@@ -106,7 +106,11 @@ function EditProduct({ id, closeModal }) {
                 window.web_event.track("product", "view", {
                     items: data,
                     dims: {},
-                    extra: {}
+                    extra: {
+                        title: "sac du phong",
+                        tags: "wifi",
+                        keywords: "san pham"
+                    }
                 })
             })
 
