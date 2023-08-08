@@ -102,7 +102,7 @@ function EditProduct({ id, closeModal }) {
                 setCategory(data[0].category);
                 setImageUrl(data[0].image_url);
                 setPageUrl(data[0].page_url);
-                console.log(data[0]);                
+                //console.log(data[0]);                
 
                 window.web_event.track("product", "view", {
                     items:  [{type: "product", parent_item_id : "1", ...data[0]}],
@@ -115,7 +115,7 @@ function EditProduct({ id, closeModal }) {
             })
 
             window.web_event.track("product", "purchase", {
-                items:  [{type: "product", parent_item_id : "1", ...data[0]}],
+                items:  [{type: "product", id:"abc"}],
                     dims: {},
                     extra: {
                         title: "sac du phong",                       
