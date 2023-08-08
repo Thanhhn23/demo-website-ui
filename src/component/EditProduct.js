@@ -112,14 +112,14 @@ function EditProduct({ id, closeModal }) {
                         keywords: "wifi"
                     }
                 })
-                window.web_event.track("product", "purchase", {
-                    items:  [{type: "product", parent_item_id : "1", ...data[0]}],
-                        dims: {},
-                        extra: {
-                            title: "sac du phong",                       
-                            keywords: "wifi"
-                        }
-                })
+                // window.web_event.track("product", "purchase", {
+                //     items:  [{type: "product", parent_item_id : "1", ...data[0]}],
+                //         dims: {},
+                //         extra: {
+                //             title: "sac du phong",                       
+                //             keywords: "wifi"
+                //         }
+                // })
             })
 
            
