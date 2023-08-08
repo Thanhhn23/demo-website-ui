@@ -105,7 +105,7 @@ function EditProduct({ id, closeModal }) {
                 //console.log(data[0]);                
 
                 window.web_event.track("product", "view", {
-                    items:  [{type: "product", parent_item_id : "abc", main_category: "Ao quan", ...data[0]}],
+                    items:  [{type: "product", parent_item_id : "abc", main_category: "test_parent", ...data[0]}],
                     dims: {},
                     extra: {
                         title: "sac du phong",                       
