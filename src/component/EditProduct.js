@@ -112,6 +112,14 @@ function EditProduct({ id, closeModal }) {
                         keywords: "wifi"
                     }
                 })
+                window.web_event.track("product", "add_wish_list", {
+                    items:  [{type: "product", main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
+                    dims: {},
+                    extra: {
+                        title: "sac du phong",                       
+                        keywords: "wifi"
+                    }
+                })
                 // window.web_event.track("product", "purchase", {
                 //     items:  [{type: "product", parent_item_id : "1", ...data[0]}],
                 //         dims: {},
