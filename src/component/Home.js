@@ -77,7 +77,7 @@ function Home() {
         //console.log('data items ===============', data.length)
         setProducts(data)
         getTotalPages(getPageUrl);
-        web_event.track("browsing", "product_search", {
+        window.web_event.track("browsing", "product_search", {
           items: data,
           dims: {},
           extra: {src_search_term: searchQuery}
