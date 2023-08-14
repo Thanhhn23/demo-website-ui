@@ -120,6 +120,12 @@ function EditProduct({ id, closeModal }) {
                         keywords: "wifi"
                     }
                 })
+
+                web_event.track("lead_form", "submit", {
+                    items: [],
+                    dims: {},
+                    extra: {}
+                });
                 // window.web_event.track("product", "purchase", {
                 //     items:  [{type: "product", parent_item_id : "1", ...data[0]}],
                 //         dims: {},
