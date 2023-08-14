@@ -121,7 +121,7 @@ function EditProduct({ id, closeModal }) {
                     }
                 })
 
-                web_event.track("lead_form", "submit", {
+                window.web_event.track("lead_form", "submit", {
                     items: [],
                     dims: {},
                     extra: {}
