@@ -105,7 +105,7 @@ function EditProduct({ id, closeModal }) {
                 //console.log(data[0]);                
 
                 window.web_event.track("product", "view", {
-                    items:  [{type: "product", parent_item_id: "381234" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
+                    items:  [{type: "product" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
                     dims: {},
                     extra: {
                         title: "sac du phong",                       
@@ -113,7 +113,7 @@ function EditProduct({ id, closeModal }) {
                     }
                 })
                 window.web_event.track("product", "add_wish_list", {
-                    items:  [{type: "product",  parent_item_id: "381234" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
+                    items:  [{type: "product", main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
                     dims: {},
                     extra: {
                         title: "sac du phong",                       
