@@ -122,7 +122,17 @@ function EditProduct({ id, closeModal }) {
                 })
 
                 window.web_event.track("lead_form", "submit", {
-                    items: [],
+                    items: [{
+                        type: "lead",
+                        id: "ID_123",
+                        name: "Thanh",
+                        showroom: "Ho Chi Minh",
+                        car_model: "Mercedes",
+                        phone: "0344795807",
+                        h_datetime: "2023-08-19 00:00:00",
+                        lead_time: "2023-08-19 00:00:00",
+                        h_checkbox: ["Chất lượng sản phẩm", "Nhân viên bán hàng", "Nhân viên bán hàng không thân thiện|không nhiệt tình| Thái độ rất giống nhân viên ngân hàng nhà nước | Cần các bạn cải thiện nếu không sẽ mất khách "]
+                    }],
                     dims: {},
                     extra: {}
                 });
@@ -134,6 +144,7 @@ function EditProduct({ id, closeModal }) {
                 //             keywords: "wifi"
                 //         }
                 // })
+                
             })
 
            
