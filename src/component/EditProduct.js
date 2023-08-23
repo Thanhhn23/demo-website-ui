@@ -106,7 +106,11 @@ function EditProduct({ id, closeModal }) {
 
                 window.web_event.track("product", "view", {
                     items:  [{type: "product" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
-                    dims: {},
+                    dims: {
+                        customers: {
+                            customer_id: "0913670086"
+                        }
+                    },
                     extra: {
                         title: "sac du phong",                       
                         keywords: "wifi"
