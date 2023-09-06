@@ -104,42 +104,42 @@ function EditProduct({ id, closeModal }) {
                 setPageUrl(data[0].page_url);
                 //console.log(data[0]);                
 
-                window.web_event.track("product", "view", {
-                    items:  [{type: "product" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
-                    dims: {
-                        customers: {
-                            customer_id: "0913670086"
-                        }
-                    },
-                    extra: {
-                        title: "sac du phong",                       
-                        keywords: "wifi"
-                    }
-                })
-                window.web_event.track("product", "add_wish_list", {
-                    items:  [{type: "product", main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
-                    dims: {},
-                    extra: {
-                        title: "sac du phong",                       
-                        keywords: "wifi"
-                    }
-                })
+                // window.web_event.track("product", "view", {
+                //     items:  [{type: "product" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
+                //     dims: {
+                //         customers: {
+                //             customer_id: "0913670086"
+                //         }
+                //     },
+                //     extra: {
+                //         title: "sac du phong",                       
+                //         keywords: "wifi"
+                //     }
+                // })
+                // window.web_event.track("product", "add_wish_list", {
+                //     items:  [{type: "product", main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
+                //     dims: {},
+                //     extra: {
+                //         title: "sac du phong",                       
+                //         keywords: "wifi"
+                //     }
+                // })
 
-                window.web_event.track("lead_form", "submit", {
-                    items: [{
-                        type: "lead",
-                        id: "ID_123",
-                        name: "Thanh",
-                        showroom: "Ho Chi Minh",
-                        car_model: "Mercedes",
-                        phone: "0344795807",
-                        h_datetime: "2023-08-19 00:00:00",
-                        lead_time: "2023-08-19 00:00:00",
-                        h_checkbox: ["Chất lượng sản phẩm", "Nhân viên bán hàng", "Nhân viên bán hàng không thân thiện|không nhiệt tình| Thái độ rất giống nhân viên ngân hàng nhà nước | Cần các bạn cải thiện nếu không sẽ mất khách "]
-                    }],
-                    dims: {},
-                    extra: {}
-                });
+                // window.web_event.track("lead_form", "submit", {
+                //     items: [{
+                //         type: "lead",
+                //         id: "ID_123",
+                //         name: "Thanh",
+                //         showroom: "Ho Chi Minh",
+                //         car_model: "Mercedes",
+                //         phone: "0344795807",
+                //         h_datetime: "2023-08-19 00:00:00",
+                //         lead_time: "2023-08-19 00:00:00",
+                //         h_checkbox: ["Chất lượng sản phẩm", "Nhân viên bán hàng", "Nhân viên bán hàng không thân thiện|không nhiệt tình| Thái độ rất giống nhân viên ngân hàng nhà nước | Cần các bạn cải thiện nếu không sẽ mất khách "]
+                //     }],
+                //     dims: {},
+                //     extra: {}
+                // });
                 window.web_event.track("zoo", "process", {
                     items:  [{}],
                         dims: {"product":{parent_item_id : "1", ...data[0]}},
