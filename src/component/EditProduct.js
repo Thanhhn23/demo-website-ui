@@ -142,7 +142,7 @@ function EditProduct({ id, closeModal }) {
                 // });
                 window.web_event.track("zoo", "process", {
                     items:  [{}],
-                        dims: {"product":{parent_item_id : "1", ...data[0], comment:"Nhân viên bán hàng|Pnj nên xem lại thái độ của nhân viên bán hàng chiều ngày 05/09 nhé. Có 3 vấn đề cần nói ở đây:\n- Thứ nhất: câu \"5 phân hay 1 chỉ đều giống nhau cả thôi\". \n- Thứ 2: hía NH? V phía bạn thì sao? \n- Thứ 3:ới. Nên nhìn nhận lại cái gọi là \"dich vu tot\"", comment_array_string: ["abc","123 \n def"]}},
+                        dims: {"product":{parent_item_id : "1", ...data[0], comment:"chiều ngày 05/09 nhé. Có 3 vấn đề cần nói ở đây:\n- Thứ nhất: câu \"5 phân hay 1 chỉ đều giống nhau cả thôi\". \n- Thứ 2: hía NH? V phía bạn thì sao? \n- Thứ 3:ới. Nên nhìn nhận lại cái gọi là \"dich vu tot\"", comment_array_string: ["abc","123 \n def"]}},
                         extra: {
                             title: "sac du phong",                       
                             keywords: "wifi"
