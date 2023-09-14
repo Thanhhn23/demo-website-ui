@@ -203,6 +203,19 @@ function handleCloseAddProduct() {
         </div> 
 
       </div>
+      <div>
+      <ants-app-inbox
+       domain="https://sandbox-api.ants.tech/access"
+       socketDomain="https://sandbox-ws.ants.tech"
+       portalId="33167"
+       destinationId="1300598"
+       lookupId="201"
+       lookupType="customer"
+       propId="556300706"
+       token=""
+      />
+      </div>
+      
 
     </div>
 
