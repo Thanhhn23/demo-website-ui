@@ -104,18 +104,18 @@ function EditProduct({ id, closeModal }) {
                 setPageUrl(data[0].page_url);
                 //console.log(data[0]);                
 
-                // window.web_event.track("product", "view", {
-                //     items:  [{type: "product" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
-                //     dims: {
-                //         customers: {
-                //             customer_id: "0913670086"
-                //         }
-                //     },
-                //     extra: {
-                //         title: "sac du phong",                       
-                //         keywords: "wifi"
-                //     }
-                // })
+                window.web_event.track("product", "view", {
+                    items:  [{type: "product" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
+                    dims: {
+                        customers: {
+                            customer_id: "0913670086"
+                        }
+                    },
+                    extra: {
+                        title: "sac du phong",                       
+                        keywords: "wifi"
+                    }
+                })
                 // window.web_event.track("product", "add_wish_list", {
                 //     items:  [{type: "product", main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
                 //     dims: {},
