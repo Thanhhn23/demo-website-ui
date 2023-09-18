@@ -21,6 +21,8 @@ function Home() {
   const [tPrice, setTPrice] = useState('');
   const [showAddProduct, setShowAddProduct] = useState(false);
 
+  const customerId = localStorage.getItem('_cdp_cusid');
+
   function handleFilter(fromPrice, toPrice, page, limit) {
     
     const filterPriceProducts = filterPrice(fromPrice, toPrice, page, limit);
@@ -209,7 +211,7 @@ function handleCloseAddProduct() {
        socketDomain="https://sandbox-ws.ants.tech"
        portalId="33167"
        destinationId="1334025"
-       lookupId="201"
+       lookupId={customerId}
        lookupType="customer"
        propId="556300706"
        token=""
