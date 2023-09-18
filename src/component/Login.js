@@ -84,7 +84,7 @@ export default function Login({ setIsAuthenticated }) {
        domain="https://sandbox-api.ants.tech/access"
        socketDomain="https://sandbox-ws.ants.tech"
        portalId="33167"
-       destinationId="1300598"
+       destinationId="1334025"
        lookupId={customerId}
        lookupType="customer"
        propId="556300706"
