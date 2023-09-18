@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import '../App.css'
+import '../App.css';
+
 
 export default function Login({ setIsAuthenticated }) {
 
@@ -7,6 +8,8 @@ export default function Login({ setIsAuthenticated }) {
     const [password, setPassword] = useState('');
     const [message, setMessage] = useState('');
     const [userType, setUserType] = useState('');
+
+    const customerId = localStorage.getItem('_cdp_cusid');
 
     const handleUsername = (e) => {
         setUsername(e.target.value);
@@ -82,7 +85,7 @@ export default function Login({ setIsAuthenticated }) {
        socketDomain="https://sandbox-ws.ants.tech"
        portalId="33167"
        destinationId="1334025"
-       lookupId="190"
+       lookupId={customerId}
        lookupType="customer"
        propId="556300706"
        token=""
