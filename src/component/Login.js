@@ -11,7 +11,7 @@ export default function Login({ setIsAuthenticated }) {
 
     const customerId = localStorage.getItem('_cdp_cusid');
 
-    const visitorId = localStorage.getItem('au_id');
+    const visitorId = localStorage.getItem('_asm_uid');
 
     const handleUsername = (e) => {
         setUsername(e.target.value);
@@ -87,8 +87,8 @@ export default function Login({ setIsAuthenticated }) {
        socketDomain="https://sandbox-ws.ants.tech"
        portalId="33167"
        destinationId="1334025"
-       lookupId="190"
-       lookupType="customer"
+       lookupId={visitorId}
+       lookupType="visitor"
        propId="556300706"
        token=""
       />    
