@@ -11,7 +11,7 @@ export default function Login({ setIsAuthenticated }) {
 
     const customerId = localStorage.getItem('_cdp_cusid');
 
-    const visitorId = localStorage.get('au_id');
+    const visitorId = localStorage.getItem('au_id');
 
     const handleUsername = (e) => {
         setUsername(e.target.value);
