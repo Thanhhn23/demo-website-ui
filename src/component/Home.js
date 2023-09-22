@@ -208,11 +208,11 @@ function handleCloseAddProduct() {
 
       </div>
       <div>
-      <AppInbox
+      <ants-app-inbox
              portalId="33167"
              destinationId="1300598"
              selector="body"
-          />
+          />     
       </div>
       
 
