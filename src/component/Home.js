@@ -209,10 +209,10 @@ function handleCloseAddProduct() {
       </div>
       <div>
       <AppInbox
-     portalId="33167"
-     destinationId="1350042"
-     selector="body"
-    />
+             portalId="33167"
+             destinationId="1300598"
+             selector="body"
+          />
       </div>
       
 
