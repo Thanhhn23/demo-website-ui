@@ -210,7 +210,7 @@ function handleCloseAddProduct() {
       <div>
       <ants-app-inbox
              portalId="33167"
-             destinationId="1300598"
+             destinationId="1350042"
              selector="body"
           />     
       </div>
