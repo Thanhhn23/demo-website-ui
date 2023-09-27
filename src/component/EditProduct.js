@@ -108,7 +108,7 @@ function EditProduct({ id, closeModal }) {
                     items:  [{type: "product" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
                     dims: {
                         customers: {
-                            customer_id: "190"
+                            customer_id: "201"
                         }
                     },
                     extra: {
