@@ -163,6 +163,9 @@ function handleCloseAddProduct() {
     <div>
       <h2 className="title">Product List</h2>
       <div className="search-zone">
+      <div>
+<antsomi-appinbox portalId="33167" destinationId="1350042" selector="body" />   
+      </div> 
       <span className="search-container">
         <label htmlFor="search-bar">Search: </label>
         <input type="text" id="search-bar" value={searchQuery} onChange={handleSearchQuery} />
@@ -205,9 +208,7 @@ function handleCloseAddProduct() {
             <div>No result found</div>
           )}
 
-<div>
-<antsomi-appinbox portalId="33167" destinationId="1350042" selector="body" />   
-      </div> 
+
         </div>
      
 
