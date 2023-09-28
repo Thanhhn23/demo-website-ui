@@ -168,10 +168,7 @@ function handleCloseAddProduct() {
         <input type="text" id="search-bar" value={searchQuery} onChange={handleSearchQuery} />
         <button onClick={handleSearch}>Search</button>
         <button onClick={handleClearSearch}>Clear</button>
-      </span>
-      <div>
-<antsomi-appinbox portalId="33167" destinationId="1350042" selector="body" />   
-      </div> 
+      </span>      
       <span>
         <FilterPrice handleFilter={handleFilter} page={page} limit={limit} handleClearPrice={handleClearPrice} handleChangePrice={handleChangePrice} />
       </span>
@@ -213,8 +210,9 @@ function handleCloseAddProduct() {
      
 
       </div>
-      
-      
+      <div>
+<antsomi-appinbox portalId="33167" destinationId="1350042" selector="body" />   
+      </div>       
 
     </div>
 
