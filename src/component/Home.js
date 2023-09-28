@@ -204,16 +204,19 @@ function handleCloseAddProduct() {
           ):(
             <div>No result found</div>
           )}
-        </div> 
 
-      </div>
-      <div>
+<div>
       <ants-app-inbox
              portalId="33167"
              destinationId="1350042"
-             selector=".product-container"
+             selector="body"
           />     
+      </div> 
+        </div>
+     
+
       </div>
+      
       
 
     </div>
