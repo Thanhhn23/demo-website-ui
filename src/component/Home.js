@@ -206,7 +206,7 @@ function handleCloseAddProduct() {
           )}
 
 <div>
-      <ants-app-inbox
+      <antsomi-appinbox
              portalId="33167"
              destinationId="1350042"
              selector="body"
