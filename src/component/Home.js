@@ -164,7 +164,7 @@ function handleCloseAddProduct() {
       <h2 className="title">Product List</h2>
       <div className="search-zone">
       <div>
-<antsomi-webinbox portalId="33167" destinationId="1350042" selector="body" />   
+<antsomi-webinbox portalId="561236459" destinationId="8269975" selector="body" />   
       </div>        
       <span className="search-container">
         <label htmlFor="search-bar">Search: </label>
