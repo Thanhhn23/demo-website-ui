@@ -149,7 +149,13 @@ function EditProduct({ id, closeModal }) {
                         }
                 })
                 
-            })
+            });
+                window.web_event.track("product", "purchase", {
+                    items: [{type: "product" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
+                    dims: {},
+                    extra: {revenue: data[0].current_price}
+                });
+
 
            
 
