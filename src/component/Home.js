@@ -22,6 +22,7 @@ function Home() {
   const [showAddProduct, setShowAddProduct] = useState(false);
 
   const customerId = localStorage.getItem('_cdp_cusid');
+  const visitorId  = localStorage.getItem('au_id');
 
 
 
@@ -164,7 +165,6 @@ function handleCloseAddProduct() {
       <h2 className="title">Product List</h2>
       <div className="search-zone">
       <div>
-<antsomi-webinbox portalId="561236459" destinationId="8269975" selector="body" />   
       </div>        
       <span className="search-container">
         <label htmlFor="search-bar">Search: </label>
@@ -208,8 +208,12 @@ function handleCloseAddProduct() {
             <div>No result found</div>
           )}
 
+          
+
 
         </div>
+        <antsomi-webinbox portalId="33167" destinationId="1350042" lookupType="visitor" lookupId={visitorId} selector="body" />   
+
      
 
       </div>
