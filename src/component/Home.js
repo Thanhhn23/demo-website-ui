@@ -22,7 +22,7 @@ function Home() {
   const [showAddProduct, setShowAddProduct] = useState(false);
 
   const customerId = localStorage.getItem('_cdp_cusid');
-  const visitorId  = localStorage.getItem('au_id');
+  const visitorId  = getCookieValue('_asm_uid');
 
 
 
