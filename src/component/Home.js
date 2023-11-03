@@ -82,11 +82,11 @@ function Home() {
         //console.log('data items ===============', data.length)
         setProducts(data)
         getTotalPages(getPageUrl);
-        window.web_event.track("browsing", "product_search", {
-          items: data,
-          dims: {},
-          extra: {src_search_term: searchQuery}
-      })
+      //   window.web_event.track("browsing", "product_search", {
+      //     items: data,
+      //     dims: {},
+      //     extra: {src_search_term: searchQuery}
+      // })
       })
       .catch(e => {
         console.log('Error:', e)
@@ -212,7 +212,7 @@ function handleCloseAddProduct() {
 
 
         </div>
-        <antsomi-webinbox portalId="33167" destinationId="1350042" lookupType="visitor" lookupId={visitorId} selector="body" />   
+          
 
      
 
