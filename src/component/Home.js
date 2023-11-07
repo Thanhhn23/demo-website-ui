@@ -214,7 +214,7 @@ function handleCloseAddProduct() {
         </div>
           
 
-     
+     <antsomi-webinbox portalId="561236459" destinationId="8269975" selector="body" />
 
       </div>
          
