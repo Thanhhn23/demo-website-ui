@@ -1,3 +1,0 @@
-const a = "[[{\"character_1\":{\"matches_any\":[\"VLO,MEX\"],\"semantics\":{\"conceptType\":\"DIMENSION\",\"semanticType\":\"STRING\"},\"dataType\":\"STRING\",\"aggregationType\":\"none\",\"filterAggregationType\":\"none\"}}]]"
-
-console.log(JSON.parse(a));

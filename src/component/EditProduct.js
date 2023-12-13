@@ -125,22 +125,22 @@ function EditProduct({ id, closeModal }) {
                 //     }
                 // })
 
-                // window.web_event.track("lead_form", "submit", {
-                //     items: [{
-                //         type: "lead",
-                //         id: "ID_123",
-                //         name: "Thanh",
-                //         showroom: "Ho Chi Minh",
-                //         car_model: "Mercedes",
-                //         phone: "0344795807",
-                //         h_datetime: "2023-08-19 00:00:00",
-                //         lead_time: "2023-08-19 00:00:00",
-                //         coupon_label: "label",
-                //         h_checkbox: ["Chất lượng sản phẩm", "Nhân viên bán hàng", "Nhân viên bán hàng không thân thiện|không nhiệt tình| Thái độ rất giống nhân viên ngân hàng nhà nước | Cần các bạn cải thiện nếu không sẽ mất khách "]
-                //     }],
-                //     dims: {},
-                //     extra: {}
-                // });
+                window.web_event.track("lead_form", "submit", {
+                    items: [{
+                        type: "lead",
+                        id: "ID_123",
+                        name: "Thanh",
+                        showroom: "Ho Chi Minh",
+                        car_model: "Mercedes",
+                        phone: "0344795807",
+                        h_datetime: "2023-08-19 00:00:00",
+                        lead_time: "2023-08-19 00:00:00",
+                        coupon_label: "label",
+                        h_checkbox: ["Chất lượng sản phẩm", "Nhân viên bán hàng", "Nhân viên bán hàng không thân thiện|không nhiệt tình| Thái độ rất giống nhân viên ngân hàng nhà nước | Cần các bạn cải thiện nếu không sẽ mất khách "]
+                    }],
+                    dims: {},
+                    extra: {}
+                });
                 // window.web_event.track("zoo", "process", {
                 //     items:  [{}],
                 //         dims: {"product":{parent_item_id : "1", ...data[0], comment:"chiều ngày 05/09 nhé. Có 3 vấn đề cần nói ở đây:\n- Thứ nhất: câu \"5 phân hay 1 chỉ đều giống nhau cả thôi\". \n- Thứ 2: hía NH? V phía bạn thì sao? \n- Thứ 3:ới. Nên nhìn nhận lại cái gọi là \"dich vu tot\"", comment_array_string: ["abc","123 \n def"]}},
