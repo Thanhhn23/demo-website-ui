@@ -116,7 +116,7 @@ function EditProduct({ id, closeModal }) {
                         keywords: "wifi"
                     }
                 })
-                web_event.track("product", "add_to_cart", {
+                window.web_event.track("product", "add_to_cart", {
                     items:  [{type: "product" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}]                    
                 })
 
