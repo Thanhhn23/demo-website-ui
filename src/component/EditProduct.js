@@ -126,7 +126,7 @@ function EditProduct({ id, closeModal }) {
                     extra: {}
                 });
                 window.web_event.track("pop_up", "lin_1", {
-                    items: [],
+                    items: [{type: "product" ,...data[0]}],
                     dims: {},
                     extra: {}
                 });
