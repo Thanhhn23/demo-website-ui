@@ -105,27 +105,27 @@ function EditProduct({ id, closeModal }) {
                 //console.log(data[0]);   
                 
                 
-                window.web_event.track("pageview", "notify_me", {
-                    items: [{}],
+                window.web_event.track("lead", "etl", {
+                    items: [{type: "product" ,...data[0]}],
+                    dims: {},
+                    extra: {}
+                });
+                window.web_event.track("product", "view", {
+                    items: [{type: "product" ,...data[0]}],
+                    dims: {},
+                    extra: {}
+                });
+                window.web_event.track("product", "add_to_cart", {
+                    items: [{type: "product" ,...data[0]}],
                     dims: {},
                     extra: {}
                 });
                 window.web_event.track("product", "click", {
-                    items: [{}],
+                    items: [{type: "product" ,...data[0]}],
                     dims: {},
                     extra: {}
                 });
                 window.web_event.track("user", "sign_in", {
-                    items: [],
-                    dims: {},
-                    extra: {}
-                });
-                window.web_event.track("sign_out", "user_action", {
-                    items: [],
-                    dims: {},
-                    extra: {}
-                });
-                window.web_event.track("pop_up", "lin_1", {
                     items: [{type: "product" ,...data[0]}],
                     dims: {},
                     extra: {}
