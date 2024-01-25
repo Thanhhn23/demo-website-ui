@@ -115,6 +115,21 @@ function EditProduct({ id, closeModal }) {
                     dims: {},
                     extra: {}
                 });
+                window.web_event.track("user", "sign_in", {
+                    items: [],
+                    dims: {},
+                    extra: {}
+                });
+                window.web_event.track("sign_out", "user_action", {
+                    items: [],
+                    dims: {},
+                    extra: {}
+                });
+                window.web_event.track("pop_up", "lin_1", {
+                    items: [],
+                    dims: {},
+                    extra: {}
+                });
 
                 // window.web_event.track("product", "view", {
                 //     items:  [{type: "product" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
