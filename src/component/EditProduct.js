@@ -102,20 +102,32 @@ function EditProduct({ id, closeModal }) {
                 setCategory(data[0].category);
                 setImageUrl(data[0].image_url);
                 setPageUrl(data[0].page_url);
-                //console.log(data[0]);                
+                //console.log(data[0]);   
+                
+                
+                window.web_event.track("pageview", "notify_me", {
+                    items: [{}],
+                    dims: {},
+                    extra: {}
+                });
+                window.web_event.track("product", "click", {
+                    items: [{}],
+                    dims: {},
+                    extra: {}
+                });
 
-                window.web_event.track("product", "view", {
-                    items:  [{type: "product" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
-                    // dims: {
-                    //     customers: {
-                    //         customer_id: "201"
-                    //     }
-                    // },
-                    extra: {
-                        title: "sac du phong",                       
-                        keywords: "wifi"
-                    }
-                })
+                // window.web_event.track("product", "view", {
+                //     items:  [{type: "product" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
+                //     // dims: {
+                //     //     customers: {
+                //     //         customer_id: "201"
+                //     //     }
+                //     // },
+                //     extra: {
+                //         title: "sac du phong",                       
+                //         keywords: "wifi"
+                //     }
+                // })
                 // window.web_event.track("product", "add_to_cart", {
                 //     items:  [{type: "product" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}]                    
                 // })
