@@ -105,31 +105,31 @@ function EditProduct({ id, closeModal }) {
                 //console.log(data[0]);   
                 
                 
-                window.web_event.track("lead", "etl", {
-                    items: [{type: "product" ,...data[0]}],
-                    dims: {},
-                    extra: {}
-                });
-                window.web_event.track("product", "view", {
-                    items: [{type: "product" ,...data[0]}],
-                    dims: {},
-                    extra: {}
-                });
-                window.web_event.track("product", "add_to_cart", {
-                    items: [{type: "product" ,...data[0]}],
-                    dims: {},
-                    extra: {}
-                });
-                window.web_event.track("product", "click", {
-                    items: [{type: "product" ,...data[0]}],
-                    dims: {},
-                    extra: {}
-                });
-                window.web_event.track("user", "sign_in", {
-                    items: [{type: "product" ,...data[0]}],
-                    dims: {},
-                    extra: {}
-                });
+                // window.web_event.track("lead", "etl", {
+                //     items: [{type: "product" ,...data[0]}],
+                //     dims: {},
+                //     extra: {}
+                // });
+                // window.web_event.track("product", "view", {
+                //     items: [{type: "product" ,...data[0]}],
+                //     dims: {},
+                //     extra: {}
+                // });
+                // window.web_event.track("product", "add_to_cart", {
+                //     items: [{type: "product" ,...data[0]}],
+                //     dims: {},
+                //     extra: {}
+                // });
+                // window.web_event.track("product", "click", {
+                //     items: [{type: "product" ,...data[0]}],
+                //     dims: {},
+                //     extra: {}
+                // });
+                // window.web_event.track("user", "sign_in", {
+                //     items: [{type: "product" ,...data[0]}],
+                //     dims: {},
+                //     extra: {}
+                // });
 
                 // window.web_event.track("product", "view", {
                 //     items:  [{type: "product" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
@@ -172,11 +172,11 @@ function EditProduct({ id, closeModal }) {
                 //         }
                 // })
 
-                // window.web_event.track("product", "purchase", {
-                //     items: [{type: "product" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
-                //     dims: {},
-                //     extra: {revenue: data[0].current_price}
-                // })
+                window.web_event.track("product", "purchase", {
+                    items: [{type: "product" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
+                    dims: {},
+                    extra: {revenue: data[0].current_price}
+                })
 
                 
                 /** start tracking event: thanh_test_new_event */
