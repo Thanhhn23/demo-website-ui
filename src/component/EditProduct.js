@@ -131,18 +131,18 @@ function EditProduct({ id, closeModal }) {
                 //     extra: {}
                 // });
 
-                // window.web_event.track("product", "view", {
-                //     items:  [{type: "product" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
-                //     // dims: {
-                //     //     customers: {
-                //     //         customer_id: "201"
-                //     //     }
-                //     // },
-                //     extra: {
-                //         title: "sac du phong",                       
-                //         keywords: "wifi"
-                //     }
-                // })
+                window.web_event.track("product", "view", {
+                    items:  [{type: "product" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
+                    // dims: {
+                    //     customers: {
+                    //         customer_id: "201"
+                    //     }
+                    // },
+                    extra: {
+                        title: "sac du phong",                       
+                        keywords: "wifi"
+                    }
+                 })
                 // window.web_event.track("product", "add_to_cart", {
                 //     items:  [{type: "product" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}]                    
                 // })
@@ -172,11 +172,11 @@ function EditProduct({ id, closeModal }) {
                 //         }
                 // })
 
-                window.web_event.track("product", "purchase", {
-                    items: [{type: "product" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
-                    dims: {},
-                    extra: {revenue: data[0].current_price}
-                })
+                // window.web_event.track("product", "purchase", {
+                //     items: [{type: "product" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
+                //     dims: {},
+                //     extra: {revenue: data[0].current_price}
+                // })
 
                 
                 /** start tracking event: thanh_test_new_event */
@@ -189,7 +189,7 @@ function EditProduct({ id, closeModal }) {
   
 
                 
-            });
+        });
                
 
            
