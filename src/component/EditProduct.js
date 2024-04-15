@@ -132,7 +132,7 @@ function EditProduct({ id, closeModal }) {
                 // });
 
                 window.web_event.track("product", "view", {
-                    items:  [{type: "product" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}],
+                    items:  [{type: "product" , brand: "LEVENTS" ,...data[0]}],
                     // dims: {
                     //     customers: {
                     //         customer_id: "201"
