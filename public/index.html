@@ -25,8 +25,29 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+
   <!-- CDP Web Insight script -->
   <script type="text/javascript">
+    var _portalId = "564890547"; // Portal test portal sandbox 
+    var _propId = "556335975";
+    var _ATM_TRACKING_ASSOCIATE_UTM = 0; //  https://demo-website-ui-thanhhn23.vercel.app/ 
+    (function () {
+      var w = window;
+      if (w.web_event) return;
+      var a = window.web_event = function () {
+        a.queue.push(arguments);
+      }
+      a.propId = _propId;
+      a.track = a;
+      a.queue = [];
+      var e = document.createElement("script");
+      e.type = "text/javascript", e.async = !0, e.src = "//sandbox-st-a.cdp.asia/insight.js";
+      var t = document.getElementsByTagName("script")[0];
+      t.parentNode.insertBefore(e, t)
+    })(); </script>
+  <!-- End of CDP Web Insight script -->
+  <!-- CDP Web Insight script -->
+  <!-- <script type="text/javascript">
     var _portalId = "33167"; // Portal ANTSOMI Shopping 
     var _propId = "556336465";
     var _ATM_TRACKING_ASSOCIATE_UTM = 1; // https://demo-website-ui-thanhhn23.vercel.app/ 
@@ -44,10 +65,10 @@
       var t = document.getElementsByTagName("script")[0];
       t.parentNode.insertBefore(e, t)
     })(); 
-    </script>
+    </script> -->
   <!-- End of CDP Web Insight script -->
   <!-- CDP Web Insight script -->
-<!-- <script type = "text/javascript" >
+  <!-- <script type = "text/javascript" >
   var _portalId = "561236459"; // Portal DEMO 
   var _propId = "564993393"; 
   var _ATM_TRACKING_ASSOCIATE_UTM = 1 ; // https://demo-website-api.vercel.app/ 
@@ -65,10 +86,10 @@
    var t = document.getElementsByTagName("script")[0];
    t.parentNode.insertBefore(e, t)
 })(); </script>  -->
-<!-- End of CDP Web Insight script -->
+  <!-- End of CDP Web Insight script -->
 
-<!-- CDP Web Insight script -->
-<!-- <script type = "text/javascript" >
+  <!-- CDP Web Insight script -->
+  <!-- <script type = "text/javascript" >
   var _portalId = "33167"; // Portal ANTSOMI Shopping 
   var _propId = "556430427"; 
   var _ATM_TRACKING_ASSOCIATE_UTM = 1 ; // https://sandbox-magento.antsomi.com/?test_popup_vu 
@@ -86,23 +107,23 @@
    var t = document.getElementsByTagName("script")[0];
    t.parentNode.insertBefore(e, t)
 })(); </script> -->
-<!-- End of CDP Web Insight script -->
+  <!-- End of CDP Web Insight script -->
   <!-- CDP Web Insight script -->
-   
-     <script src="https://sandbox-template.ants.vn/khanhhv/webpush.js" async=""></script>
+
+  <script src="https://sandbox-template.ants.vn/khanhhv/webpush.js" async=""></script>
   <script>
     window.AntsomiPush = window.AntsomiPush || [];
 
     AntsomiPush.push(function () {
       AntsomiPush.init({
-        portalId: 33167,
+        portalId: 564890547,
       });
     });
-  </script> 
+  </script>
   <!-- End of CDP Web Insight script -->
 
   <!-- CDP Web Insight script -->
-<!-- <script type = "text/javascript" >
+  <!-- <script type = "text/javascript" >
   var _portalId = "564890547"; // Portal test portal sandbox 
   var _propId = "556335975"; 
   var _ATM_TRACKING_ASSOCIATE_UTM = 0 ; //  https://demo-website-ui-thanhhn23.vercel.app/ 
@@ -120,10 +141,10 @@
    var t = document.getElementsByTagName("script")[0];
    t.parentNode.insertBefore(e, t)
 })(); </script> -->
-<!-- End of CDP Web Insight script -->
+  <!-- End of CDP Web Insight script -->
 
   <!-- CDP Web Insight script -->
-<!-- <script type = "text/javascript" >
+  <!-- <script type = "text/javascript" >
   var _portalId = "561236459"; // Portal DEMO 
   var _propId = "564997759"; 
   var _ATM_TRACKING_ASSOCIATE_UTM = 1 ; // https://demo-e.cdp.asia/?testhgp 
@@ -141,11 +162,11 @@
    var t = document.getElementsByTagName("script")[0];
    t.parentNode.insertBefore(e, t)
 })(); </script> -->
-<!-- End of CDP Web Insight script -->
+  <!-- End of CDP Web Insight script -->
 
 
   <!-- CDP Web Insight script - webpush portal demo -->
-<!-- <script src="https://st-a.cdp.asia/webpush.js" async=""></script>
+  <!-- <script src="https://st-a.cdp.asia/webpush.js" async=""></script>
 <script>
   window.AntsomiPush = window.AntsomiPush || [];
 
@@ -155,10 +176,10 @@
     });
   });
 </script> -->
-<!-- End of CDP Web Insight script -->
+  <!-- End of CDP Web Insight script -->
 
-<script src="https://sandbox-template.ants.vn/khanhhv/antsomi-webinbox/index.js?v=1233217"></script>
-<!-- <script src="https://st-platform.ants.tech/js/libs/app-inbox/app-inbox.min.js?v=1"></script> -->
+  <script src="https://sandbox-template.ants.vn/khanhhv/antsomi-webinbox/index.js?v=1233217"></script>
+  <!-- <script src="https://st-platform.ants.tech/js/libs/app-inbox/app-inbox.min.js?v=1"></script> -->
 
   <title>React App</title>
 </head>
