@@ -23,7 +23,7 @@ function EditProduct({ id, closeModal }) {
 
 
     function handleEditSave() {
-        
+
         //console.log('Save');
         const id = product[0].id;
         const obj = {
@@ -103,8 +103,8 @@ function EditProduct({ id, closeModal }) {
                 setImageUrl(data[0].image_url);
                 setPageUrl(data[0].page_url);
                 //console.log(data[0]);   
-                
-                
+
+
                 // window.web_event.track("lead", "etl", {
                 //     items: [{type: "product" ,...data[0]}],
                 //     dims: {},
@@ -132,17 +132,17 @@ function EditProduct({ id, closeModal }) {
                 // });
 
                 window.web_event.track("product", "view", {
-                    items:  [{type: "product" , brand: "LEVENTS" ,...data[0]}],
+                    items: [{ type: "product", brand: "LEVENTS", ...data[0] }],
                     // dims: {
                     //     customers: {
                     //         customer_id: "201"
                     //     }
                     // },
                     extra: {
-                        title: "sac du phong",                       
+                        title: "sac du phong",
                         keywords: "wifi"
                     }
-                 })
+                })
                 // window.web_event.track("product", "add_to_cart", {
                 //     items:  [{type: "product" , main_category: "Test_Parent", brand: "LEVENTS" ,...data[0]}]                    
                 // })
@@ -178,52 +178,61 @@ function EditProduct({ id, closeModal }) {
                 //     extra: {revenue: data[0].current_price}
                 // })
 
-                
-                /** start tracking event: thanh_test_new_event */
-                    // window.web_event.track("motel", "booking", {
-                    //     items: [{}],
-                    //     dims: {},
-                    //     extra: {}
-                    // });
-    /** end block */
-  
 
-                
-        });
-               
 
-           
+
+                window.web_event.track("product", "checkout", {
+                    items: [{ type: "product", ...data[0] }],
+                    // dims: {
+                    //     customers: {
+                    //         customer_id: "201"
+                    //     }
+                    // },
+                    extra: {
+                        // title: "sac du phong",
+                        // keywords: "wifi"
+                    }
+                });
+
+
+
+
+
+            });
+
+
+
 
     }, [])
 
     return (
-        <div className="edit-product-container">            
+        <div className="edit-product-container">
             {product && product.length > 0 ? (
                 <div key={product[0].id}>
                     <div className="edit-product-id">Product ID: {product[0].id}</div>
                     <div>
                         <label className="edit-product-label">Name </label>
-                        <input type="text" id="name" value={name} readOnly={!isEditable} onClick={handleFieldClick} onChange={handleChangeName} className="edit-product-input"/>
+                        <input type="text" id="name" value={name} readOnly={!isEditable} onClick={handleFieldClick} onChange={handleChangeName} className="edit-product-input" />
                     </div>
                     <div>
                         <label className="edit-product-label">Current Price </label>
-                        <input type="number" id="current-price" value={currentPrice} readOnly={!isEditable} onClick={handleFieldClick} onChange={handleChangeCurPrice} className="edit-product-input"/>
+                        <input type="number" id="current-price" value={currentPrice} readOnly={!isEditable} onClick={handleFieldClick} onChange={handleChangeCurPrice} className="edit-product-input" />
                     </div>
                     <div>
                         <label className="edit-product-label">Original Price </label>
-                        <input type="number" id="original_price" value={originalPrice} readOnly={!isEditable} onClick={handleFieldClick} onChange={handleChangeOriPrice} className="edit-product-input"/>
+                        <input type="number" id="original_price" value={originalPrice} readOnly={!isEditable} onClick={handleFieldClick} onChange={handleChangeOriPrice} className="edit-product-input" />
                     </div>
                     <div>
                         <label className="edit-product-label">Category </label>
-                        <input type="text" id="category" value={category} readOnly={!isEditable} onClick={handleFieldClick} onChange={handleChangeCategory} className="edit-product-input"/>
+                        <input type="text" id="category" value={category} readOnly={!isEditable} onClick={handleFieldClick} onChange={handleChangeCategory} className="edit-product-input" />
                     </div>
                     <div>
                         <label className="edit-product-label">Image URL </label>
-                        <input type="text" id="image_url" value={imageUrl} readOnly={!isEditable} onClick={handleFieldClick} onChange={handleChangeImage} className="edit-product-input"/>
+                        <input type="text" id="image_url" value={imageUrl} readOnly={!isEditable} onClick={handleFieldClick} onChange={handleChangeImage} className="edit-product-input" />
                     </div>
                     <div>
                         <label className="edit-product-label">Page URL </label>
-                        <input type="text" id="page_url" value={pageUrl} readOnly={!isEditable} onClick={handleFieldClick} onChange={handleChangePage} className="edit-product-input"/>           </div>
+                        <input type="text" id="page_url" value={pageUrl} readOnly={!isEditable} onClick={handleFieldClick} onChange={handleChangePage} className="edit-product-input" />           </div>
 
                     <button onClick={() => handleEditSave()} className="edit-product-message">Save</button>
                     <button onClick={() => closeModal()} className="edit-product-message">Close</button>
@@ -234,9 +243,9 @@ function EditProduct({ id, closeModal }) {
             ) : (
                 <div>Loading...</div>
             )}
-            
+
         </div>
-        
+
     )
 }
 
